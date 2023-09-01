@@ -1,27 +1,90 @@
-@tailwind base;
+ /* @tailwind base; */
 @tailwind components;
-@tailwind utilities;
+@tailwind utilities; 
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+*{
+    margin: 0;
+    text-decoration: unset;
+    font-family: Arial, Helvetica, sans-serif;
+}
+a{
+    text-decoration: none;
+    color: #000;
+    
+}
+.tiptap ProseMirror:focus{
+    outline: none;
+    border: none;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+.tiptap :focus{
+    outline: none;
+    border: none;
+}
+.tiptap :active{
+    outline: none;
+    border: none;
+}
+.tiptap :focus-visible{
+    outline: none;
+    border: none;   
+}
+.tiptap :focus-within{
+    outline: none;
+    border: none;   
+}
+
+.tiptap  {
+    margin-top: 0.75em;
+    padding:2vh  8vw;
   }
-}
-
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-}
+  
+.tiptap ul,
+.tiptap ol {
+    padding: 0 1rem;
+  }
+  
+  .tiptap h1,
+  .tiptap h2,
+  .tiptap h3,
+  .tiptap h4,
+  .tiptap h5,
+  .tiptap h6 {
+    line-height: 1.1;
+  }
+  
+.tiptap code {
+    background-color: rgba(97, 97, 97, 0.1);
+    color: #616161;
+    font-family: 'Courier New', Courier, monospace;
+  }
+  
+  .tiptap pre {
+    background: #0D0D0D;
+    color: #FFF;
+    font-family: 'JetBrainsMono', monospace;
+    padding: 0.75rem 1rem;
+    border-radius: 0.5rem;
+  }
+  
+  .tiptap pre code {
+    color: inherit;
+    padding: 0;
+    background: none;
+    font-size: 0.8rem;
+  }
+  
+  .tiptap img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .tiptap hr {
+    margin: 1rem 0;
+  }
+  
+  .tiptap blockquote {
+    padding-left: 1rem;
+    border-left: 2px solid rgba(13, 13, 13, 0.1);
+  }
+  
